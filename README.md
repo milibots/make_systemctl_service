@@ -1,4 +1,4 @@
-# make_systemctl_service# make_systemctl_service 🚀
+# make_systemctl_service 🚀
 
 **Automated Systemd Service Generator for Python Projects**
 
@@ -18,23 +18,19 @@ A smart, interactive script that automatically creates systemd services for any 
 
 ### Option 1: Direct Installation (Recommended)
 ```bash
-# Navigate to your Python project directory
-cd /path/to/your/python/project
-
 # Run the generator (requires sudo)
-curl -fsSL https://raw.githubusercontent.com/MiliScripts/make_systemctl_service/main/generate.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/milibots/make_systemctl_service/main/generate.sh)
 ```
 
 ### Option 2: Download & Run Locally
 ```bash
 # Download the script
-wget https://raw.githubusercontent.com/MiliScripts/make_systemctl_service/main/generate.sh
+wget https://raw.githubusercontent.com/milibots/make_systemctl_service/main/generate.sh
 
 # Make executable
 chmod +x generate.sh
 
 # Run in your project directory
-cd /path/to/your/project
 sudo ./generate.sh
 ```
 
@@ -69,7 +65,7 @@ The script guides you through:
 Works with any Python project:
 - Single-file scripts
 - Django/Flask applications
-- Telegram/ Discord bots
+- Telegram/Discord bots
 - Background workers
 - APIs and web services
 - Data processing pipelines
@@ -127,19 +123,19 @@ Automatically finds virtual environments named:
 ### Create service for a Telegram bot:
 ```bash
 cd ~/my-telegram-bot
-curl -fsSL https://raw.githubusercontent.com/MiliScripts/make_systemctl_service/main/generate.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/milibots/make_systemctl_service/main/generate.sh)
 ```
 
 ### Create service for a Flask web app:
 ```bash
 cd /var/www/my-flask-app
-curl -fsSL https://raw.githubusercontent.com/MiliScripts/make_systemctl_service/main/generate.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/milibots/make_systemctl_service/main/generate.sh)
 ```
 
 ### Create service for a background worker:
 ```bash
 cd ~/my-background-worker
-curl -fsSL https://raw.githubusercontent.com/MiliScripts/make_systemctl_service/main/generate.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/milibots/make_systemctl_service/main/generate.sh)
 ```
 
 ## ⚙️ Advanced Configuration
@@ -236,8 +232,7 @@ A: Use a virtual environment with the required Python version before running the
 
 **🚀 Get Started Now:**
 ```bash
-cd /path/to/your/project
-curl -fsSL https://raw.githubusercontent.com/MiliScripts/make_systemctl_service/main/generate.sh | sudo bash
+bash <(curl -fsSL https://raw.githubusercontent.com/milibots/make_systemctl_service/main/generate.sh)
 ```
 
 **💡 Pro Tip:** Always test your script manually before setting it up as a service!
