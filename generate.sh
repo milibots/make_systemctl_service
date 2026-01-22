@@ -140,10 +140,13 @@ install_service() {
     print_message "=== Virtual Environment Setup ===" "$BLUE"
     
     VENV_PATHS=()
-    for venv_name in venv .venv env .env virtualenv; do
-        if [ -d "$PROJECT_DIR/$venv_name" ] && [ -f "$PROJECT_DIR/$venv_name/bin/python" ]; then
-            VENV_PATHS+=("$PROJECT_DIR/$venv_name")
-        fi
+
+   for base in "$PROJECT_DIR" "$PARENT_DIR"; do
+      for venv_name in venv .venv env .env virtualenv; do
+         if [ -d "$base/$venv_name" ] && [ -f "$base/$venv_name/bin/python" ]; then
+            VENV_PATHS+=("$base/$venv_name")
+         fi
+            done
     done
     
     USE_VENV=false
